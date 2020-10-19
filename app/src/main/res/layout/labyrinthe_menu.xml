@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/but_labyrinthe_1"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="@string/un"/>
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/but_labyrinthe_2"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="@string/_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/but_labyrinthe_3"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="@string/_3" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/but_labyrinthe_4"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="@string/_4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_keyboard_return"
+                android:onClick="close_labyrinthe"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

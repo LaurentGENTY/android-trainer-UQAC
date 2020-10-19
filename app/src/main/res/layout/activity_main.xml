@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uqac.dim.androidprojet.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accueil"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10sp">
+
+                <TextView android:id="@+id/niveau_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/niv"
+                    />
+
+                <Space android:id="@+id/space_niveau"
+                    android:layout_width="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/last_connexion_text_1"/>
+
+                <TextView android:id="@+id/niveau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:layout_toRightOf="@+id/space_last_connexion"
+                    />
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <org.rajawali3d.view.SurfaceView
+            android:id="@+id/surfaceModel3D"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="59" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <fragment
+                android:id="@+id/frag_main_menu"
+                android:name="uqac.dim.androidprojet.menu_fragments.Main_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/frag_stats"
+                android:name="uqac.dim.androidprojet.menu_fragments.Statistiques"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/frag_menu_mini_jeu"
+                android:name="uqac.dim.androidprojet.menu_fragments.Menu_mini_jeu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/frag_menu_labyrinthe"
+                android:name="uqac.dim.androidprojet.menu_fragments.Menu_labyrinthe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/frag_choix_personnage"
+                android:name="uqac.dim.androidprojet.menu_fragments.ChoixPersonnage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/frag_a_propos"
+                android:name="uqac.dim.androidprojet.menu_fragments.APropos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/frag_boss"
+                android:name="uqac.dim.androidprojet.menu_fragments.menu_boss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/main_reglages"
+                android:name="uqac.dim.androidprojet.menu_fragments.MainReglages"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/frag_experience"
+            android:name="uqac.dim.androidprojet.menu_fragments.Experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

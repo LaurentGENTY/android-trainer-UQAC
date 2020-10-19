@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_choixperso_basique"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="changerModel"
+                android:text="Basique"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="413dp" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/but_choixperso_chapvert"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="changerModel"
+                android:text="Chapeau vert"
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="399dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_choixperso_chapbleu"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="changerModel"
+                android:text="Chapeau bleu"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="339dp" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/but_choixperso_chaprouge"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="changerModel"
+                android:text="Chapeau rouge"
+                tools:layout_editor_absoluteX="188dp"
+                tools:layout_editor_absoluteY="339dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/but_choixperso_chapviolet"
+                android:layout_width="149dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="changerModel"
+                android:text="Chapeau violet"
+                tools:layout_editor_absoluteX="56dp"
+                tools:layout_editor_absoluteY="251dp" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/but_choixperso_golden"
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="changerModel"
+                android:text="Chapeau golden"
+                tools:layout_editor_absoluteX="206dp"
+                tools:layout_editor_absoluteY="266dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="246dp">
+
+            <Space
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/retour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/retour"
+                android:onClick="close_choixPersonnage"
+                android:src="@drawable/ic_keyboard_return"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.974"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.413" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
